@@ -513,10 +513,10 @@ start end  summer SumStatus Value
                       while not adsCreateMaket.Eof do
                       begin
                         i := StrToInt(System.Copy(adsCreateMaket.FieldByName('start').AsString,1,2));
-                        if (daySumerTOWinter(YearOf(dt)) = dt) then // если перевод времени Ћето«има
+                        if (false  {daySumerTOWinter(YearOf(dt)) = dt}) then // если перевод времени Ћето«има
                         begin
                           if (adsCreateMaket.FieldByName('summer').AsInteger = 0) then
-                            i := i + 1; 
+                            i := i + 1;
                         end;
                         atiRes[i].Value := adsCreateMaket.FieldByName('Value').AsInteger;
                         if adsCreateMaket.FieldByName('SumStatus').AsInteger = 0 then
@@ -547,20 +547,20 @@ start end  summer SumStatus Value
                   else
                     xPeriod.Attributes['end']:='0000';
 
-                  if (dayWinterTOSumer(YearOf(dt)) = dt) and (i>2) then
+                  if (false {dayWinterTOSumer(YearOf(dt)) = dt}) and (i>2) then
                     xPeriod.Attributes['summer']:='1';
 
-                  if (daySumerTOWinter(YearOf(dt)) = dt) and (i<2) then
+                  if (false {daySumerTOWinter(YearOf(dt)) = dt}) and (i<2) then
                     xPeriod.Attributes['summer']:='1';
 
-                  if (daySumerTOWinter(YearOf(dt)) = dt) and (i=2) then
+                  if (false {daySumerTOWinter(YearOf(dt)) = dt}) and (i=2) then
                   begin
                     xPeriod.Attributes['summer']:='1';
                     xValue:=xPeriod.AddChild('value');
                     xValue.Attributes['status']:='0';
                     xValue.NodeValue := dmData.VarToStrDefIsNull(atiRes[i],koef,NULLTODEF);
                     // дублируем
-                    addDay_SummerToWinter := 1;                    
+                    addDay_SummerToWinter := 1;
                     xPeriod:=xmp.AddChild('period');
                     xPeriod.Attributes['start']:=IntToStrLen(i,2)+'00';
                     xPeriod.Attributes['end']:=IntToStrLen(i+1,2)+'00'

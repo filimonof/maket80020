@@ -19,8 +19,8 @@ object frmMain: TfrmMain
   TextHeight = 13
   object dxStatusBar1: TdxStatusBar
     Left = 0
-    Top = 426
-    Width = 778
+    Top = 422
+    Width = 770
     Height = 20
     Panels = <
       item
@@ -56,43 +56,43 @@ object frmMain: TfrmMain
     Font.Style = []
   end
   object dxDockSite3: TdxDockSite
-    Left = 778
+    Left = 770
     Top = 26
     Width = 0
-    Height = 400
+    Height = 396
     Align = alRight
     AutoSize = True
     DockType = 0
     OriginalWidth = 0
-    OriginalHeight = 400
+    OriginalHeight = 396
   end
   object dxDockSite2: TdxDockSite
     Left = 0
     Top = 26
-    Width = 778
+    Width = 770
     Height = 0
     Align = alTop
     AutoSize = True
     DockType = 0
-    OriginalWidth = 778
+    OriginalWidth = 770
     OriginalHeight = 0
   end
   object dxDockSite4: TdxDockSite
     Left = 0
-    Top = 426
-    Width = 778
+    Top = 422
+    Width = 770
     Height = 0
     Align = alBottom
     AutoSize = True
     DockType = 0
-    OriginalWidth = 778
+    OriginalWidth = 770
     OriginalHeight = 0
   end
   object dxDockSite1: TdxDockSite
     Left = 0
     Top = 26
     Width = 204
-    Height = 400
+    Height = 396
     Align = alLeft
     AutoSize = True
     DockType = 0
@@ -102,7 +102,7 @@ object frmMain: TfrmMain
       Left = 0
       Top = 0
       Width = 204
-      Height = 400
+      Height = 396
       DockType = 1
       OriginalWidth = 204
       OriginalHeight = 200
@@ -111,7 +111,7 @@ object frmMain: TfrmMain
       Left = 0
       Top = 0
       Width = 204
-      Height = 400
+      Height = 396
       AllowFloating = True
       AutoHide = False
       Caption = '   '#1047#1072#1076#1072#1095#1080
@@ -123,7 +123,7 @@ object frmMain: TfrmMain
         Left = 0
         Top = 0
         Width = 200
-        Height = 376
+        Height = 372
         Align = alClient
         ActiveGroupIndex = 0
         DragCopyCursor = -1119
@@ -244,8 +244,8 @@ object frmMain: TfrmMain
   object dxBarManager1: TdxBarManager
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
     Font.Style = []
     Bars = <
       item

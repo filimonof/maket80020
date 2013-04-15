@@ -84,12 +84,15 @@ end;
 
 function DayLightSavingTime(dt: TDateTime): Integer;
 begin
+  Result := 1; //всегда летнее
+{
   if (dt = daySumerTOWinter(YearOf(dt))) or (dt = dayWinterTOSumer(YearOf(dt))) then
     Result := 2    //сутки с зимнего на летнее и обратно
   else if (dayWinterTOSumer(YearOf(dt)) < dt) and (dt < daySumerTOWinter(YearOf(dt)))  then
     Result := 1    //летнее время
   else
     Result := 0;   //зимнее
+}
 end;
 
 function IncludeArray(ar: string; s: string; ar_separator: string=';'): Boolean;

@@ -7,7 +7,7 @@ uses SakMsg, ck7GetData;
 const
   NAME_PROGRAM = 'Макет 80020';
   NAME_PROGRAM_SMALL = 'm80020';
-  VERSION_PROGRAM = '3.1.1';
+  VERSION_PROGRAM = '3.2.0';
 
   INT_ENABLED = 1;
   INT_DISABLED = 0;
